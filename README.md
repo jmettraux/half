@@ -32,5 +32,5 @@ Could work out of the box with existing HAL clients.
 
 ## License
 
-same as HAL
+MIT.
 
