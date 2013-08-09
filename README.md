@@ -3,6 +3,8 @@
 
 [HAL](http://stateless.co/hal_specification.html) + Forms
 
+Work in progress.
+
 ```js
 {
   "_links": {
@@ -24,7 +26,7 @@
 
 ## Motivation
 
-I need it.
+I (seem to) need it.
 
 Based on [HAL](http://stateless.co/hal_specification.html), inspired by [DocJSON](https://github.com/docjson/docjson).
 
