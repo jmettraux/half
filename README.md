@@ -15,7 +15,8 @@
     "fields": {
       { "name": "name", "required": true },
       { "name": "age" }
-      { "name": "profession", "default": "docker" }
+      { "name": "profession", "default": "docker" },
+      { "name": "crsfToken", "value": "123456abcdef" },
     }
   }
 }
