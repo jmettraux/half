@@ -14,13 +14,10 @@ Work in progress.
     "next": {
       "href": "http://example.com/xyz?page=2"
     },
-    "customer_lookup": {
-      "href": "http://example.com/customers",
-      "fields": [
-        { "name": "country", "required": true },
-      ]
+    "customer_lookup": { // URI template example
+      "href": "http://example.com/customers/{country}",
     },
-    "customer_upload": {
+    "customer_upload": { // form example
       "href": "http://example.com/xyz",
       "method": "POST", // defaults to "GET"
       "fields": [
@@ -40,6 +37,8 @@ Work in progress.
 I (seem to) need it.
 
 Based on [HAL](http://stateless.co/hal_specification.html), inspired by [DocJSON](https://github.com/docjson/docjson).
+
+Also based on [URI template](http://tools.ietf.org/html/rfc6570).
 
 Could work out of the box with existing HAL clients.
 
