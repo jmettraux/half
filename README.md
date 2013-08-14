@@ -8,17 +8,28 @@ Work in progress.
 ```js
 {
   "_links": {
-    "self": { "href": "http://example.com/xyz" },
-    "next": { "href": "http://example.com/xyz?page=2" },
-  },
-  "_forms": {
-    "href": "http://example.com/xyz", // could default to self
-    "method": "POST",
-    "fields": {
-      { "name": "name", "required": true },
-      { "name": "age" }
-      { "name": "profession", "default": "docker" },
-      { "name": "crsfToken", "value": "123456abcdef" },
+    "self": {
+      "href": "http://example.com/xyz"
+    },
+    "next": {
+      "href": "http://example.com/xyz?page=2"
+    },
+    "customer_lookup": {
+      "href": "http://example.com/customers",
+      "fields": [
+        { "name": "country", "required": true },
+      ]
+    },
+    "customer_upload": {
+      "href": "http://example.com/xyz",
+      "method": "POST", // defaults to "GET"
+      "fields": [
+        { "name": "name", "required": true },
+        { "name": "country", "required": true },
+        { "name": "age" }
+        { "name": "profession", "default": "docker" },
+        { "name": "crsfToken", "value": "123456abcdef" }
+      ]
     }
   }
 }
