@@ -16,6 +16,7 @@ Work in progress.
     },
     "customer_lookup": { // URI template example
       "href": "http://example.com/customers/{country}",
+      "templated": true
     },
     "customer_upload": { // form example
       "href": "http://example.com/xyz",
